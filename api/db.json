@@ -1,16 +1,6 @@
 {
   "metalEntries": [
     {
-      "name": "Bar of GOLD",
-      "type": "Gold",
-      "weight": "3",
-      "unit": "Oz",
-      "qty": "1",
-      "purchasePrice": "4",
-      "timeStamp": 1598284910625,
-      "id": 2
-    },
-    {
       "name": "wer",
       "type": "Silver",
       "weight": "2",
@@ -19,6 +9,16 @@
       "purchasePrice": "44",
       "timeStamp": 1598284928900,
       "id": 3
+    },
+    {
+      "name": "rusty Nail",
+      "type": "Silver",
+      "weight": "2",
+      "unit": "Grams",
+      "qty": "4",
+      "purchasePrice": "4",
+      "timeStamp": 1598287013587,
+      "id": 4
     }
   ]
 }
