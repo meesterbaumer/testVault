@@ -1,14 +1,24 @@
 {
   "metalEntries": [
     {
-      "id": 1,
-      "name": "Silver Bar",
-      "type": "Bullion",
-      "weight": "1",
+      "name": "wer",
+      "type": "Silver",
+      "weight": "2",
       "unit": "Oz",
-      "qty": 1,
-      "purchasedPrice": 18.00,
-      "timeStamp": 1598233283082
+      "qty": "3",
+      "purchasePrice": "44",
+      "timeStamp": 1598284928900,
+      "id": 3
+    },
+    {
+      "name": "rusty Nail",
+      "type": "Silver",
+      "weight": "2",
+      "unit": "Grams",
+      "qty": "4",
+      "purchasePrice": "4",
+      "timeStamp": 1598287013587,
+      "id": 4
     }
   ]
 }

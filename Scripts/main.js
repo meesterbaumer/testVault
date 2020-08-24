@@ -1,3 +1,5 @@
-document.querySelector("#submitForm").addEventListener("click", event => {
-  console.log(document.querySelector("#metalForm--name").value)
-})
+import { entryList } from "./MetalEntry/EntryList.js";
+import "./MetalEntry/EntryForm.js"
+
+
+entryList()
