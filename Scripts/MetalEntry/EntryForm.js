@@ -1,3 +1,36 @@
+import { saveMetalEntry } from "../MetalProvider.js"
+
+const eventHub = document.querySelector(".eventHub")
+
+eventHub.addEventListener("click", event => {
+  if (event.target.id === "submitForm") {
+    const entryName = document.querySelector("#metalForm--name")
+    const entryType = document.querySelector("#metalForm--type")
+    const entryWeight = document.querySelector("#metalForm--weight")
+    const entryUnit = document.querySelector("#metalForm--unit")
+    const entryQty = document.querySelector("#metalForm--qty")
+    const entryCost = document.querySelector("#metalForm--cost")
+
+    const newMetal = {
+      name: entryName.value,
+      type: entryType.value,
+      weight: entryWeight.value,
+      unit: entryUnit.value,
+      qty: entryQty.value,
+      purchasePrice: entryCost.value,
+      timeStamp: Date.now()
+    }
+    saveMetalEntry(newMetal)
+    entryName.value=""
+    entryType.value=""
+    entryWeight.value=""
+    entryUnit.value=""
+    entryQty.value=""
+    entryCost.value=""
+
+  }
+})
+
 export const entryForm = () => {
   return `
   <div class="metalContainer">
@@ -7,7 +40,7 @@ export const entryForm = () => {
       <option value="bullion">Bullion</option>
       <option value="coin">Coin</option>
     </select>
-    <input type="text" class="metalForm--weight" id="metalForm--weight" placeholder="Enter the weight of your item">
+    <input type="number" class="metalForm--weight" id="metalForm--weight" placeholder="Enter the weight of your item">
     <select name="type" class="metalForm--unit" id="metalForm--unit">
       <option value="0">Oz or Grams</option>
       <option value="Oz">Oz</option>
