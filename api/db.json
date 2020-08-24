@@ -1,0 +1,14 @@
+{
+  "metalEntries": [
+    {
+      "id": 1,
+      "name": "Silver Bar",
+      "type": "Bullion",
+      "weight": "1",
+      "unit": "Oz",
+      "qty": 1,
+      "purchasedPrice": 18.00,
+      "timeStamp": 1598233283082
+    }
+  ]
+}

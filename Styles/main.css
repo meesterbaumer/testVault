@@ -1,0 +1,30 @@
+body {
+  background-color: lightcoral;
+}
+
+.metalContainer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 16rem;
+  /* flex-direction: column; */
+}
+
+.metalForm--name {
+  width: 100%;
+}
+
+.metalForm--type {
+  width: 100%;
+}
+.metalForm--weight {
+  width: 68%
+}
+.metalForm--unit {
+  width: 28%;
+}
+.metalForm--qty {
+  width: 100%;
+}
+.metalForm--cost {
+  width: 100%;
+}
