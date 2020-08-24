@@ -2,7 +2,7 @@ body {
   background-color: lightcoral;
 }
 
-.metalContainer {
+.metalFormContainer {
   display: flex;
   flex-wrap: wrap;
   width: 16rem;
@@ -27,4 +27,13 @@ body {
 }
 .metalForm--cost {
   width: 100%;
+}
+
+.metalDisplayContainer {
+  display: flex;
+}
+
+.individualMetal {
+  border: solid black 2px;
+  margin: .5rem;
 }

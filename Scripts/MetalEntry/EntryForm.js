@@ -1,4 +1,4 @@
-import { saveMetalEntry } from "../MetalProvider.js"
+import { saveMetalEntry } from "../MetalList/MetalProvider.js"
 
 const eventHub = document.querySelector(".eventHub")
 
@@ -22,9 +22,9 @@ eventHub.addEventListener("click", event => {
     }
     saveMetalEntry(newMetal)
     entryName.value=""
-    entryType.value=""
+    entryType.value="0"
     entryWeight.value=""
-    entryUnit.value=""
+    entryUnit.value="0"
     entryQty.value=""
     entryCost.value=""
 
@@ -33,12 +33,12 @@ eventHub.addEventListener("click", event => {
 
 export const entryForm = () => {
   return `
-  <div class="metalContainer">
+  <div class="metalFormContainer">
     <input type="text" class="metalForm--name" id="metalForm--name" placeholder="Enter a name for the item to enter">
     <select name="type" class="metalForm--type" id="metalForm--type">
       <option value="0">Select an entry type</option>
-      <option value="bullion">Bullion</option>
-      <option value="coin">Coin</option>
+      <option value="Silver">Silver</option>
+      <option value="Gold">Gold</option>
     </select>
     <input type="number" class="metalForm--weight" id="metalForm--weight" placeholder="Enter the weight of your item">
     <select name="type" class="metalForm--unit" id="metalForm--unit">

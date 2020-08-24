@@ -1,5 +1,13 @@
 let metals = []
 
+const eventHub = document.querySelector(".eventHub")
+
+const dispatchStateChangeEvent = () => {
+  const change = new CustomEvent("updatedDatabase")
+
+  eventHub.dispatchEvent(change)
+}
+
 export const useMetals = () => metals.slice()
 
 export const getMetals = () => {
@@ -16,7 +24,7 @@ export const saveMetalEntry = (ent) => {
     },
     body: JSON.stringify(ent)
   })
-  // .then(getMetals)
-  // .then(useMetals)
-  // return metals
+  .then(getMetals)
+  .then(useMetals)
+  .then(dispatchStateChangeEvent)
 }
