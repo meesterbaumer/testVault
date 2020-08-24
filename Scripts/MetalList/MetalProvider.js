@@ -28,3 +28,11 @@ export const saveMetalEntry = (ent) => {
   .then(useMetals)
   .then(dispatchStateChangeEvent)
 }
+
+export const deleteMetalEntry = (entId) => {
+  return fetch(`http://localhost:8088/metalEntries/${entId}`, {
+    method: "DELETE"
+  })
+  .then(getMetals)
+  .then(dispatchStateChangeEvent)
+}

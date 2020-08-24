@@ -1,16 +1,6 @@
 {
   "metalEntries": [
     {
-      "name": "Bar of Silver",
-      "type": "Silver",
-      "weight": "20",
-      "unit": "Oz",
-      "qty": "1",
-      "purchasePrice": "200",
-      "timeStamp": 1598284838449,
-      "id": 1
-    },
-    {
       "name": "Bar of GOLD",
       "type": "Gold",
       "weight": "3",
